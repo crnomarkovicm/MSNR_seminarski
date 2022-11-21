@@ -1,0 +1,138 @@
+\documentclass[a4paper]{article}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage{pgf-pie}
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
+\usepackage[utf8]{inputenc} % make weird characters work
+\usepackage{graphicx}
+
+\usepackage[english,serbian]{babel}
+%\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
+
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+\usepackage{listings}
+
+%\newtheorem{primer}{Пример}[section] %ćirilični primer
+\newtheorem{primer}{Primer}[section]
+
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+  backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+  basicstyle=\scriptsize\ttfamily,        % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  firstnumber=1000,                % start line enumeration with line 1000
+  frame=single,	                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=Python,                 % the language of the code
+  morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=5pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stepnumber=2,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  stringstyle=\color{mymauve},     % string literal style
+  tabsize=2,	                   % sets default tabsize to 2 spaces
+  title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
+\begin{document}
+
+\title{Problemi rodne ravnopravnosti u informatici u Srbiji\\
+\vspace{5mm}
+\small{Seminarski rad u okviru kursa\\Metodologija stručnog i naučnog rada\\ Matematički fakultet}}
+
+\author{Marko Babić, Miloš Milaković,  Maja Crnomarković\\ \href{mailto:markobabic056@gmail.com}{markobabic056@gmail.com} , \href{mailto:milos.milakovic98@gmail.com}{milos.milakovic98gmail.com}, \href{mailto:majacrnomarkovic@live.com}{majacrnomarkovic@live.com}}
+
+%\date{9.~april 2015.}
+\maketitle
+
+\abstract{
+TODO.}
+
+\tableofcontents
+
+\newpage
+
+\section{Uvod}
+\label{sec:uvod}
+
+TODO
+
+\section{Odnos polova u industriji u informatici u Srbiji}
+TODO
+
+
+
+\section{Odnos polova u informatici u odnosu na svet}	
+
+
+
+
+\section{Odnos polova u informatici na Matematičkom fakultetu Univerziteta u Beogradu}
+\label{matematicki}
+U ovom odeljku prikazaćemo podatke o odnosu polova na smeru Informatika na Matematičkom fakultetu Univerziteta u Beogradu u prethodnih šest godina. \\
+
+\begin{table}[h!]
+\begin{center}
+\caption{Broj upisanih studenata muškog i ženskog pola u prethodnih šest godina}
+
+\begin{tabular}{|c|c|c|c|} \hline
+godina&broj upisanih muškog pola& broj upisanih ženskog pola & ukupan broj upisanih\\ \hline
+2017&144&47&161\\ \hline
+2018&102&54&156\\ \hline
+2019&90&75&165\\ \hline
+2022&104&56&160\\ \hline
+
+\end{tabular}
+\label{tab:tabela1}
+\end{center}
+\end{table}
+
+\begin{tikzpicture}
+\pie{70.8/M, 29.2/Ž}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\pie{65.38/M, 34.62/Ž}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\pie{54.55/M, 45.45/Ž}
+\end{tikzpicture}
+
+\begin{tikzpicture}
+\pie{65/M, 35/Ž}
+\end{tikzpicture}
+
+
+\section{Zaključak}
+\label{sec:zakljucak}
+
+TODO
+
+
+\addcontentsline{toc}{section}{Literatura}
+\appendix
+\bibliography{seminarski} 
+\bibliographystyle{plain}
+
+\appendix
+
+
+\end{document}
