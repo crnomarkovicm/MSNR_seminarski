@@ -1,5 +1,5 @@
 \documentclass[a4paper]{article}
-
+\usepackage[table]{xcolor}
 \usepackage{color}
 \usepackage{url}
 \usepackage{pgf-pie}
@@ -72,12 +72,12 @@ TODO.}
 \section{Uvod}
 \label{sec:uvod}
 
-TODO
-
-\section{Odnos polova u industriji u informatici u Srbiji}
 Ada Bajron, ćerka pesnika Bajrona i talentovani matematičar smatra se prvim programerom u istoriji. Njoj u čast nazvan je programski jezik ADA. Ona je bila i prva koja je uvidela da se računske mašine mogu upotrebiti i za nematematičke namene,
 čime je na neki način predvidela današnje primene digitalnih računara. S obzirom na to da je u to vreme bilo nezamislivo da se žene bave bilo kakvim naučnim radom, prevazilazeći stereotipne granice, Ada je naslutila većinu onoga što se danas smatra modernim računarstvom.
 Ipak, slika osobe koja se bavi informacionim tehnologijama ili programera oduvek je podrazumevala muškarca. Još od početka razvoja računara, uloga žena bila je da reklamiraju    i takav pristup doprineo je da se i danas žene slabije odlučuju na ove profesije. Tehnologija neizostavno prožima živote svih nas, a vizija ravnopravnog i otvorenog društva podrazumeva da svi, bez obzira na rod, imaju pristup inovacijama, kao i obrazovanju u svim oblastima – kako radi što boljeg razumevanja sveta budućnosti, tako i zbog doprinosa koji mogu pružiti.
+
+\section{Odnos polova u industriji u informatici u Srbiji}
+
 
 Postoji nekoliko faktora koji doprinose proširenju rodnog jaza u IT sektoru:
 1. Ne samo da IT kompanije zapošljavaju manje žena nego muškaraca, već  je i procenat žena koje napuštaju IT poslove veći od procenata muškaraca. (Ashcraft,  McLain  and  Eger,  2016;  Scott  and  Kapor  Klein,  2017)
@@ -85,32 +85,96 @@ Postoji nekoliko faktora koji doprinose proširenju rodnog jaza u IT sektoru:
 
 
 
+\section{Odnos polova u akademiji u informatici u Srbiji}	
+Problem rodne jednakosti, tj. nejednakosti je deo kulturnog nasleđa i teško je uticati na tradicionalne poglede i podelu poslova na osnovu polova. Veliku odgovornost u tome da zainteresuju žene za IT oblast kao i da im omoguće kvalitetno obrazovanje imaju sve obrazovne institucije, a posebno Univerziteti. Bez toga, trenutna slika IT sektora teško će moći da se promeni i unapredi.
+
+Prema podacima Republičkog zavoda za statistiku za 2019. godinu, na visoke škole i fakultete upisano je ukupno 241968 studenata. Na visoko obrazovanje upisalo se 137910 žena, tj. 57\%, dok je muškaraca  104058, tj. 43\%. Sličan odnos bio je i u godinama od 2014. do 2019. (tabela 1).
+
+\setlength{\arrayrulewidth}{0.5mm}
+\setlength{\tabcolsep}{14pt}
+\renewcommand{\arraystretch}{2.5}
+\newcolumntype{m}{>{\columncolor[HTML]{AAACED}} p{1cm}}
+\newcolumntype{z}{>{\columncolor[HTML]{FFB6C1}} p{1cm}}
+{
+\centering
+    \begin{tabular}{ |p{1cm}|z|m|z|m| }
+\hline
+Godina& Žene & Muškarci & Žene (\%) & Muškarci (\%) \\
+\hline
+2014 &134460 &106594 &55,8 &44,2 \\
+2015 &138971 &112191 &55,3 &44,7 \\
+2016 &146899 &115190 &56,0 &44,0 \\
+2017 &144871 &111301 &56,6 &43,4 \\
+2018 &141679 &108092 &56,7 &43,3 \\
+2019 &137910 &6104058 &57,0 &43,3 \\
+\hline
+\end{tabular} \ \
+} \\
+
+Veći broj žena odlučuje se za studije u oblastima obrazovanja, zdravstva i zaštite, kao i umetnosti i humanističkim naukama. (slika 2). 
+{
+\centering
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.7]{upisaniNaVisokoObrazovanjeMZ.png}
+\end{center}
+\caption{Upisani}
+\label{fig:upisani}
+\end{figure}
+}
+Među studentima koji su diplomirali 2019. godine, žene čine više od polovine u velikom broju područja obrazovanja, ali su muškarci i dalje dominantni u područjima: Informacione i komunikacione tehnologije (66\%) i Inženjerstvo, proizvodnja i građevinarstvo (61\%). \\
+
+{
+\centering
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.7]{diplomiraniNaVisokimSkIF.png}
+\end{center}
+\caption{Diplomirani}
+\label{fig:diplomirani}
+\end{figure}
+}
+
+
+U Srbiji je 2019. godine doktoriralo 792 osobe, 448 žena i 344 muškarca. 
+Iako je veći broj žena koje završavaju doktorske studije (57\%),  u oblasti informatike i komunikacionih tehnolologija taj broj je najmanji (34\%), dok muškarci čine 66\% doktoriranih lica u ovoj oblasti. \\
+
+
+{
+\centering
+\begin{figure}[h!]
+\begin{center}
+\includegraphics[scale=0.7]{doktorirali.png}
+\end{center}
+\caption{Doktorirali}
+\label{fig:doktorirali}
+\end{figure}
+}
 
 \section{Odnos polova u informatici u Srbiji u odnosu na svet}	
 
-
-
-
 \section{Odnos polova u informatici na Matematičkom fakultetu Univerziteta u Beogradu}
 \label{matematicki}
-Problem rodne jednakosti, tj. nejednakosti je deo kulturnog nasleđa i teško je uticati na tradicionalne poglede i podelu poslova na osnovu polova. Veliku odgovornost u tome da zainteresuju žene za IT oblast kao i da im omoguće kvalitetno obrazovanje imaju sve obrazovne institucije, a posebno Univerziteti. Bez toga, trenutna slika IT sektora teško će moći da se promeni i unapredi.
+
 U ovom odeljku prikazaćemo podatke o odnosu polova na smeru Informatika na Matematičkom fakultetu Univerziteta u Beogradu u prethodnih šest godina. \\
 
+{
+\centering
 \begin{table}[h!]
-\begin{center}
 \caption{Broj upisanih studenata muškog i ženskog pola u prethodnih šest godina}
 
-\begin{tabular}{|c|c|c|c|} \hline
+\begin{tabular}{|p{2cm}|p{2cm}|p{2cm}|p{2cm}|} \hline
 godina&broj upisanih muškog pola& broj upisanih ženskog pola & ukupan broj upisanih\\ \hline
 2017&144&47&161\\ \hline
 2018&102&54&156\\ \hline
 2019&90&75&165\\ \hline
 2022&104&56&160\\ \hline
 
+
 \end{tabular}
 \label{tab:tabela1}
-\end{center}
 \end{table}
+}
 
 \begin{tikzpicture}
 \pie{70.8/M, 29.2/Ž}
